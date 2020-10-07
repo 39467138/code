@@ -173,24 +173,7 @@
 			*/
          }
 		 
-		 function sent_color(text){
-			var tex = text;
-			//var data = 'readKey=' + document.getElementById('username').value;
-			$.ajax({
-				type: "POST",
-				//api.uclassify.com/v1/uClassify/Sentiment/classify/?readKey=qk1r3xMvadqA&text=I+am+so+bad+today
-				url: "api_call_color.php",
-				//url: "phpInsight-master/examples/demo.php",{ code: code, userid: userid }
-				data: {txt: tex},
-				
-				success: function(response5) {
-					var obj5 = JSON.parse(response5);
-					var per = ((obj5.positive)*100).toFixed(0)
-					return per;
-				}
-			});
-		}
-		
+		 
       </script>
       <header class="w3-container w3-blue w3-center w3-padding-128">
 		  <br><br><br>
