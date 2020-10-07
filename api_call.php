@@ -24,6 +24,6 @@ $array_no = array(1, 2, 3, 4, 5);
 		
 	}
 */
-$response = file_get_contents('https://api.uclassify.com/v1/uClassify/Sentiment/classify/?readKey=rXRxzaeGhSxH&text='.$text);
+$response = file_get_contents(''.$text);
 echo $response;
 ?>
